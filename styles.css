@@ -49,7 +49,6 @@ hr {
     margin: 20px 0;
 }
 
-/* Progress Bar - Updated styling */
 .progress-bar {
     position: relative;
     width: 100%;
@@ -57,8 +56,7 @@ hr {
     height: 30px;
     margin: 30px 0;
 }
-
-/* Remove the existing ::before element */
+            
 .progress-bar::before {
     display: none;
 }
@@ -71,7 +69,7 @@ hr {
     justify-content: center;
 }
 
-/* First step - Contact Information */
+
 .step[data-step="1"] {
     position: absolute;
     width: 33.5%;
@@ -105,7 +103,7 @@ hr {
     color: #FFFFFF;
 }
 
-/* Second step - Case Details */
+
 .step[data-step="2"] {
     position: absolute;
     width: 33.5%;
@@ -137,7 +135,7 @@ hr {
     color: #1E1E1E;
 }
 
-/* Third step - Finalize */
+
 .step[data-step="3"] {
     position: absolute;
     width: 33.5%;
@@ -171,7 +169,6 @@ hr {
     color: #1E1E1E;
 }
 
-/* Active and completed states */
 .step.active .step-content {
     font-weight: 700;
     color: #FFFFFF;
@@ -195,7 +192,7 @@ hr {
     background: #4CAF50;
 }
 
-/* Form Styles */
+
 .form-row {
     display: flex;
     gap: 20px;
@@ -269,7 +266,7 @@ textarea {
     margin-top: 5px;
 }
 
-/* Buttons */
+
 .form-buttons {
     display: flex;
     justify-content: space-between;
@@ -308,7 +305,7 @@ button {
     background-color: #222;
 }
 
-/* Custom arrow for submit button */
+
 .submit-btn {
     background-color: #4CAF50;
     position: relative;
@@ -329,7 +326,7 @@ button {
     justify-content: center;
 }
 
-/* Consent Section */
+
 .consent-section {
     margin: 20px 0;
 }
@@ -363,7 +360,6 @@ button {
     text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .form-container {
         padding: 20px;
@@ -392,7 +388,7 @@ button {
     }
 }
 
-/* Form Step Animation */
+
 .form-step {
     opacity: 0;
     height: 0;
@@ -408,7 +404,7 @@ button {
     transform: translateY(0);
 }
 
-/* Success Message Styles */
+
 .success-message {
     text-align: center;
     padding: 40px 20px;
@@ -445,7 +441,7 @@ button {
     text-decoration: underline;
 }
 
-/* Checkmark Animation */
+
 .checkmark {
     width: 80px;
     height: 80px;
@@ -476,7 +472,7 @@ button {
     }
 }
 
-/* Loading Spinner */
+
 .loading-spinner {
     display: inline-block;
     width: 20px;
@@ -492,7 +488,6 @@ button {
     to { transform: rotate(360deg); }
 }
 
-/* Enhanced Error styling */
 input.error, select.error, textarea.error {
     border: 2px solid #f44336;
     background-color: rgba(244, 67, 54, 0.05);
@@ -505,19 +500,19 @@ input.error, select.error, textarea.error {
     20%, 40%, 60%, 80% { transform: translateX(5px); }
 }
 
-/* Add focus style for error fields */
+
 input.error:focus, select.error:focus, textarea.error:focus {
     border-color: #f44336;
     box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.25);
     outline: none;
 }
 
-/* Add label error styling */
+
 label.error {
     color: #f44336;
 }
 
-/* Phone icon styling */
+
 .phone-icon {
     vertical-align: middle;
     margin-right: 5px;
@@ -535,7 +530,7 @@ label.error {
     text-decoration: underline;
 }
 
-/* Case type title */
+
 .case-type-title {
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -545,7 +540,6 @@ label.error {
     color: #333;
 }
 
-/* Progress bar text responsive handling */
 .step-content .short-text {
     display: none;
 }
@@ -560,7 +554,6 @@ label.error {
     }
 }
 
-/* Security note inside form */
 .form-step .security-note {
     display: flex;
     align-items: center;
@@ -572,10 +565,9 @@ label.error {
 }
 
 .security-note {
-    display: none; /* Hide the one outside the form */
+    display: none; 
 }
 
-/* Progress bar text responsive handling */
 .step-content .short-text {
     display: none;
 }
@@ -590,7 +582,6 @@ label.error {
     }
 }
 
-/* Security note at bottom of form */
 .security-note {
     display: flex;
     align-items: center;
@@ -613,7 +604,6 @@ label.error {
     font-weight: 500;
 }
 
-/* Make it responsive */
 @media (max-width: 768px) {
     .security-note {
         flex-direction: column;
