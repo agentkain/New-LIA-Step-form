@@ -131,13 +131,10 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.innerHTML = '<span class="loading-spinner"></span> Submitting...';
             submitBtn.disabled = true;
             
-            // Simulate form submission with a timeout
             setTimeout(() => {
-                // Show the success step and mark progress bar as completed simultaneously
                 currentStep = 4;
                 showStep(currentStep);
                 
-                // Add the completed class to the progress bar at the same time
                 const progressBar = document.querySelector('.progress-bar');
                 progressBar.classList.add('completed');
                 
