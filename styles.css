@@ -721,4 +721,13 @@ label.error {
 @keyframes moveLeft {
     0% { left: 66.67%; }
     100% { left: 50%; }
+}
+
+.contact-info-title {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
 } 
