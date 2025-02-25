@@ -34,7 +34,7 @@ body {
 .form-header h1 {
     font-family: 'Castoro', serif;
     font-size: 32px;
-    font-weight: normal;
+    font-weight: 800;
     margin-bottom: 2px;
 }
 
@@ -54,7 +54,7 @@ hr {
     position: relative;
     width: 100%;
     max-width: 100%;
-    height: 23px;
+    height: 30px;
     margin: 30px 0;
 }
 
@@ -75,13 +75,13 @@ hr {
 .step[data-step="1"] {
     position: absolute;
     width: 33.5%;
-    height: 23px;
+    height: 30px;
     left: 0px;
     top: 0;
     background: #2F2F2F;
     z-index: 3;
-    border-top-left-radius: 11.5px;
-    border-bottom-left-radius: 11.5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0 100%);
 }
 
@@ -95,7 +95,7 @@ hr {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 150%;
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@ hr {
 .step[data-step="2"] {
     position: absolute;
     width: 33.5%;
-    height: 23px;
+    height: 30px;
     left: 33%;
     top: 0;
     background: #D9D9D9;
@@ -127,7 +127,7 @@ hr {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 150%;
     display: flex;
     align-items: center;
@@ -141,13 +141,13 @@ hr {
 .step[data-step="3"] {
     position: absolute;
     width: 33.5%;
-    height: 23px;
+    height: 30px;
     left: 66%;
     top: 0;
     background: #D9D9D9;
     z-index: 1;
-    border-top-right-radius: 11.5px;
-    border-bottom-right-radius: 11.5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10px 100%);
 }
 
@@ -161,7 +161,7 @@ hr {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 150%;
     display: flex;
     align-items: center;
@@ -177,6 +177,11 @@ hr {
     color: #FFFFFF;
 }
 
+.step.completed .step-content {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
 .step.active[data-step="1"] {
     background: #2F2F2F;
 }
@@ -188,10 +193,6 @@ hr {
 
 .step.completed {
     background: #4CAF50;
-}
-
-.step.completed .step-content {
-    color: #FFFFFF;
 }
 
 /* Form Styles */
@@ -414,8 +415,9 @@ button {
 }
 
 .success-message h2 {
-    font-family: 'Castoro', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 28px;
+    font-weight: 600;
     margin-bottom: 20px;
     color: #333;
 }
@@ -555,5 +557,70 @@ label.error {
     
     .step-content .short-text {
         display: inline;
+    }
+}
+
+/* Security note inside form */
+.form-step .security-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.security-note {
+    display: none; /* Hide the one outside the form */
+}
+
+/* Progress bar text responsive handling */
+.step-content .short-text {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .step-content .full-text {
+        display: none;
+    }
+    
+    .step-content .short-text {
+        display: inline;
+    }
+}
+
+/* Security note at bottom of form */
+.security-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.shield-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.security-note p {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .security-note {
+        flex-direction: column;
+    }
+    
+    .shield-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 } 

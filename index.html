@@ -80,6 +80,7 @@
                                 <option value="hair-straightener">Hair Straightener</option>
                                 <option value="mesothelioma">Mesothelioma</option>
                                 <option value="personal-injury">Personal Injury</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
                     </div>
@@ -87,6 +88,12 @@
                     <div class="form-buttons">
                         <div></div> <!-- Empty div for spacing -->
                         <button type="button" class="next-btn">Next step →</button>
+                    </div>
+                    
+                    <!-- Add security note here -->
+                    <div class="security-note">
+                        <img src="public/Check Shield - 150X172.png" alt="Security Shield" class="shield-icon">
+                        <p>Your submission is 100% secure and confidential.</p>
                     </div>
                 </div>
                 
@@ -475,6 +482,20 @@
                         </div>
                     </div>
                     
+                    <!-- Other Case Type Questions -->
+                    <div class="case-questions" id="other-questions" style="display: none;">
+                        <div class="form-group">
+                            <label for="other-attorney">Do you already have an attorney representing this claim? <span class="required">*</span></label>
+                            <div class="select-wrapper">
+                                <select id="other-attorney" required>
+                                    <option value="" disabled selected>Please select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <hr>
                     
                     <div class="form-group">
@@ -486,6 +507,10 @@
                     <div class="form-buttons">
                         <button type="button" class="back-btn">Go Back</button>
                         <button type="button" class="next-btn">Next step →</button>
+                    </div>
+                    <div class="security-note">
+                        <img src="public/Check Shield - 150X172.png" alt="Security Shield" class="shield-icon">
+                        <p>Your submission is 100% secure and confidential.</p>
                     </div>
                 </div>
                 
@@ -512,8 +537,6 @@
                         </div>
                     </div>
                     
-                    <hr>
-                    
                     <div class="form-buttons">
                         <button type="button" class="back-btn">Go Back</button>
                         <button type="submit" class="submit-btn">Submit <span class="arrow">
@@ -521,6 +544,10 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.22789 0.135986L15.7279 0.135987C16.5563 0.135987 17.2279 0.807559 17.2279 1.63599L17.2279 15.136C17.2279 15.9644 16.5563 16.636 15.7279 16.636C14.8995 16.636 14.2279 15.9644 14.2279 15.136V5.25731L3.78855 15.6966C3.20276 16.2824 2.25301 16.2824 1.66723 15.6966C1.08144 15.1109 1.08144 14.1611 1.66723 13.5753L12.1066 3.13599L2.22789 3.13599C1.39946 3.13599 0.727889 2.46441 0.727888 1.63599C0.727888 0.807558 1.39946 0.135986 2.22789 0.135986Z" fill="white"/>
                             </svg>
                         </span></button>
+                    </div>
+                    <div class="security-note">
+                        <img src="public/Check Shield - 150X172.png" alt="Security Shield" class="shield-icon">
+                        <p>Your submission is 100% secure and confidential.</p>
                     </div>
                 </div>
                 
