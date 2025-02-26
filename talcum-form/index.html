@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talcum Powder Case Qualification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Talcum Powder Case Qualification</h1>
+                <p>Act Now! Before It's Too Late!</p>
+                <hr>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="step active" data-step="1">
+                    <div class="step-content">
+                        <span class="full-text">Contact Information</span>
+                        <span class="short-text">Contact</span>
+                    </div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-content">
+                        <span class="full-text">Case Details</span>
+                        <span class="short-text">Case</span>
+                    </div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-content">
+                        <span class="full-text">Finalize</span>
+                        <span class="short-text">Finalize</span>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="qualification-form">
+                <div class="form-step active" data-step="1">
+                    <h2 class="contact-info-title">Contact Information</h2>
+                    
+                    <div class="form-row name-row">
+                        <div class="form-group">
+                            <label for="firstName">First name <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last name <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <div></div>
+                        <button type="button" class="next-btn">Next step →</button>
+                    </div>
+                    
+                    <div class="security-note">
+                        <img src="public/Check Shield - 150X172.png" alt="Security Shield" class="shield-icon">
+                        <p>This site is secure and confidential.</p>
+                    </div>
+                </div>
+                
+                <div class="form-step" data-step="2">
+                    <h2 class="case-type-title">Talcum Powder Case Details</h2>
+                    
+                    <div class="form-group">
+                        <label for="talcum-cancer">Did you, or someone you know, develop cancer after using talcum powder? <span class="required">*</span></label>
+                        <div class="select-wrapper">
+                            <select id="talcum-cancer" name="talcum-cancer" required>
+                                <option value="" disabled selected>Please select</option>
+                                <option value="ovarian">Ovarian Cancer</option>
+                                <option value="fallopian">Fallopian Tube Cancer</option>
+                                <option value="mesothelioma">Mesothelioma</option>
+                                <option value="peritoneal">Peritoneal Cancer</option>
+                                <option value="death">Death from Cancer</option>
+                                <option value="none">No / Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="diagnosis-year">What year were you diagnosed with cancer? <span class="required">*</span></label>
+                        <div class="select-wrapper">
+                            <select id="diagnosis-year" name="diagnosis-year" required>
+                                <option value="" disabled selected>Please select</option>
+                                <option value="2020-after">2020 or After</option>
+                                <option value="2019-before">2019 or Before</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="talcum-attorney">Do you already have an attorney representing this claim? <span class="required">*</span></label>
+                        <div class="select-wrapper">
+                            <select id="talcum-attorney" name="talcum-attorney" required>
+                                <option value="" disabled selected>Please select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="form-group">
+                        <label for="caseDetails">Tell us more about your case.</label>
+                        <textarea id="caseDetails" name="caseDetails" placeholder="How can we help?" rows="6"></textarea>
+                        <div class="char-count"><span id="charCount">0</span> / 500</div>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="button" class="back-btn">Go Back</button>
+                        <button type="button" class="next-btn">Next step →</button>
+                    </div>
+                    <div class="security-note">
+                        <img src="public/Check Shield - 150X172.png" alt="Security Shield" class="shield-icon">
+                        <p>This site is secure and confidential.</p>
+                    </div>
+                </div>
+                
+                <div class="form-step" data-step="3">
+                    <div class="consent-section">
+                        <div class="consent-item">
+                            <input type="checkbox" id="termsConsent" name="termsConsent" checked required>
+                            <label for="termsConsent">
+                                By clicking this box and on the "Submit" button below, you confirm you have read and agree to abide by our <a href="#">Terms & Conditions</a> (including resolving all disputes through binding individual arbitration) and our <a href="#">Privacy Policy</a>.
+                            </label>
+                        </div>
+                        
+                        <div class="consent-item">
+                            <input type="checkbox" id="callConsent" name="callConsent" required>
+                            <label for="callConsent">
+                                By clicking this box and on the "Submit" below, you consent to receive live calls, automated phone calls and/or text messages, made by or on behalf of Legal Injury Advocates, a tradename of Saddle Rock Legal Group LLC, to the phone number provided above, regarding your potential case, legal services, and promotions/offers. Your consent is not a condition of any purchase of any goods or services. In no event will we represent you or be considered your attorneys until we execute a written Agreement to Represent.
+                            </label>
+                        </div>
+                        
+                        <div class="consent-item">
+                            <input type="checkbox" id="blogSubscribe" name="blogSubscribe">
+                            <label for="blogSubscribe">Subscribe to our blog</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="button" class="back-btn">Go Back</button>
+                        <button type="submit" class="submit-btn">Submit <span class="arrow">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.22789 0.135986L15.7279 0.135987C16.5563 0.135987 17.2279 0.807559 17.2279 1.63599L17.2279 15.136C17.2279 15.9644 16.5563 16.636 15.7279 16.636C14.8995 16.636 14.2279 15.9644 14.2279 15.136V5.25731L3.78855 15.6966C3.20276 16.2824 2.25301 16.2824 1.66723 15.6966C1.08144 15.1109 1.08144 14.1611 1.66723 13.5753L12.1066 3.13599L2.22789 3.13599C1.39946 3.13599 0.727889 2.46441 0.727888 1.63599C0.727888 0.807558 1.39946 0.135986 2.22789 0.135986Z" fill="white"/>
+                            </svg>
+                        </span></button>
+                    </div>
+                    <div class="security-note">
+                        <img src="public/Check Shield - 150X172.png" alt="Security Shield" class="shield-icon">
+                        <p>This site is secure and confidential.</p>
+                    </div>
+                </div>
+                
+                <div class="form-step" data-step="4">
+                    <div class="success-message">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                            <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                        </svg>
+                        <h2>Thank you for your submission!</h2>
+                        <p>We've received your information and will be in touch shortly.</p>
+                        <p class="contact-info">
+                            If you have any questions, please contact us at 
+                            <a href="tel:8555425555">
+                                <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                (855) LIA-5555
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
